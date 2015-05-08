@@ -1,0 +1,70 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"  
+	android:stretchColumns="1">
+	<TableRow>
+		<TextView
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="路径:" />
+		<EditText
+			android:id="@+id/selectedFile"
+			android:singleLine="true"
+	        android:layout_width="10px"
+			android:layout_height="wrap_content"
+			android:hint="Please select a file..." />
+	    <ImageButton
+	        android:id="@+id/selectFileBtn"
+	        android:background="@drawable/folder3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" />
+	</TableRow>
+	<TableRow>
+		<Button
+	        android:id="@+id/uploadBtn"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_span="3"
+	        android:background="@drawable/button"
+	        android:text="上传文件" />
+    </TableRow>
+    <TableRow>
+		<TextView   
+	         android:id="@+id/fileName"
+		     android:layout_width="match_parent"    
+		     android:layout_height="wrap_content"
+	         android:layout_span="3"   
+		     android:text="" />
+    </TableRow>
+    <TableRow>
+		<ProgressBar
+		    style="?android:attr/progressBarStyleHorizontal" 
+	        android:id="@+id/progressBar"
+	        android:visibility="gone"
+	        android:layout_width="match_parent"
+	        android:layout_height="30px"
+	        android:max="100"
+	        android:progress="0"
+	        android:layout_span="3"
+	        android:text="文件正在上传......" />
+    </TableRow>
+    <TableRow>
+		<TextView   
+	         android:id="@+id/uploadedPercent"
+		     android:layout_width="match_parent"    
+		     android:layout_height="wrap_content" 
+	         android:layout_span="2"     
+		     android:text="" />
+		<TextView   
+	         android:id="@+id/uploadedSpeed"
+		     android:layout_width="match_parent"    
+		     android:layout_height="wrap_content"
+		     android:gravity="center"
+		     android:text="" />
+    </TableRow>
+</TableLayout>
+
+
+
+
